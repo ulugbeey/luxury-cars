@@ -1,0 +1,239 @@
+:root {
+    --brand-color: #ffd700;
+    --title-color: #000;
+    --border-radius: 10px;
+    --bg-color: #977f2e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+
+button {
+    background: var(--brand-color);
+    padding: 10px 30px;
+    border-radius: 9px;
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.logo {
+    font-size: 35px;
+    color: var(--title-color);
+}
+
+.logo span {
+    color: var(--brand-color);
+}
+
+body {
+    font-family: 'Inter-400', sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    /* padding: 15px 0; */
+    height: 100vh;
+    width: 100%;
+    background: url(images/bg04.jpg) no-repeat center / cover;
+}
+
+.header .container .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: var(--bg-color);
+}
+
+/* 
+.header .container .nav .logo {
+    font-size: 35px;
+    color: var(--title-color);
+}
+
+.header .container .nav .logo span {
+    color: var(--brand-color);
+} */
+
+.header .container .menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header .container .menu a {
+    color: var(--title-color);
+    font-size: 20px;
+}
+
+.header .container .menu a:hover {
+    color: var(--brand-color);
+}
+
+.about {
+    padding: 15px 0;
+    background-color: var(--title-color);
+}
+
+.about .container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    height: 100%;
+}
+
+.about .container .left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about .container .left .content {
+    width: 720px;
+    padding: 15px;
+    background: var(--brand-color);
+    box-shadow: 0px 13px 53px rgba(0, 0, 0, 0.07);
+    border-radius: var(--border-radius);
+}
+
+.about .container .left .content .title {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Inter-500', sans-serif;
+    color: var(--title-color);
+    line-height: 22px;
+    padding: 10px 0;
+}
+
+.popular {
+    padding: 85px 0;
+    background: var(--title-color);
+}
+
+.popular .container .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 24px;
+    color: var(--brand-color);
+}
+
+.popular .wrapper {
+    padding-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.popular .wrapper .card {
+    width: 290px;
+    background: var(--brand-color);
+    box-shadow: 0px 13px 53px rgba(0, 0, 0, 0.12);
+    border-radius: var(--border-radius);
+}
+
+.popular .wrapper .card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.popular .wrapper .card .image-block {
+    width: 290px;
+    height: 200px;
+}
+
+.popular .wrapper .card .image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.popular .wrapper .card .content {
+    padding: 25px 20px;
+}
+
+.popular .wrapper .card .content .desc {
+    width: 240px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Inter-500', sans-serif;
+    color: var(--title-color);
+    line-height: 20px;
+    padding-bottom: 35px;
+}
+
+.popular .wrapper .card .content .price {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.popular .wrapper .card .content .price .cost {
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Inter-600', sans-serif;
+    color: var(--title-color);
+}
+
+.footer .container {
+    background: var(--bg-color);
+    box-shadow: 0px 13px 53px rgba(0, 0, 0, 0.07);
+    padding: 40px 30px;
+}
+
+.footer .container .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--title-color);
+    padding-bottom: 30px;
+}
+
+.footer .container .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.footer .container .bottom .menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Inter-500', sans-serif;
+    color: var(--title-color);
+}
